@@ -83,6 +83,8 @@ input, select, textarea {
 		html, body {
 			min-width: 320px;
 		}
+		.sidenav {padding-top: 15px;}
+  		.sidenav a {font-size: 18px;}
 
 	}
 
@@ -2909,6 +2911,10 @@ input, select, textarea {
 	header {
 		cursor: default;
 	}
+	/*header > a {
+
+		z-index: 1;   position: fixed;  top: 0;
+	}*/
 
 		header > .date {
 			display: block;
@@ -3933,6 +3939,8 @@ input, select, textarea {
 			#main > * {
 				padding: 2rem 2rem 0.1rem 2rem ;
 			}
+			.sidenav {padding-top: 15px;}
+  			.sidenav a {font-size: 18px;}
 
 		}
 
@@ -4342,6 +4350,8 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+			.sidenav {padding-top: 15px;}
+  			.sidenav a {font-size: 18px;}
 
 			#footer > section {
 				padding: 2rem 2rem 0.1rem 2rem ;
@@ -4378,6 +4388,8 @@ input, select, textarea {
 			#footer {
 				width: 100%;
 			}
+			.sidenav {padding-top: 15px;}
+  			.sidenav a {font-size: 18px;}
 
 		}
 
@@ -4464,6 +4476,8 @@ input, select, textarea {
 			#copyright {
 				margin: 4rem auto;
 			}
+			.sidenav {padding-top: 15px;}
+  			.sidenav a {font-size: 18px;}
 
 		}
 
@@ -4475,12 +4489,25 @@ input, select, textarea {
 				padding-left: 0;
 				display: block;
 			}
+			.sidenav {padding-top: 15px;}
+  			.sidenav a {font-size: 18px;}
 
 				#copyright ul li:first-child {
 					margin-top: 0;
 				}
 
 		}
+		.sidenav {
+			height: 100%;
+			width: 200px;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			padding-top: 20px;
+		  }
 
 /* Nav Panel */
 
@@ -4538,6 +4565,8 @@ input, select, textarea {
 			#navPanelToggle {
 				display: block;
 			}
+			.sidenav {padding-top: 15px;}
+  			.sidenav a {font-size: 18px;}
 
 		}
 
@@ -4547,6 +4576,8 @@ input, select, textarea {
 				font-size: 0.8rem;
 				padding: 0.25rem 1rem;
 			}
+			.sidenav {padding-top: 15px;}
+  			.sidenav a {font-size: 18px;}
 
 		}
 
@@ -4651,6 +4682,8 @@ input, select, textarea {
 					height: 4rem;
 					line-height: 4rem;
 				}
+				.sidenav {padding-top: 15px;}
+  			.sidenav a {font-size: 18px;}
 
 			}
 
@@ -4659,6 +4692,8 @@ input, select, textarea {
 			#navPanel {
 				display: block;
 			}
+			.sidenav {padding-top: 15px;}
+  			.sidenav a {font-size: 18px;}
 
 		}
 
@@ -4667,6 +4702,8 @@ input, select, textarea {
 			#navPanel {
 				padding: 2.5rem 1.75rem;
 			}
+			.sidenav {padding-top: 15px;}
+  			.sidenav a {font-size: 18px;}
 
 		}
 
@@ -4675,6 +4712,8 @@ input, select, textarea {
 		body.is-navPanel-visible #wrapper {
 			opacity: 0.5;
 		}
+		.sidenav {padding-top: 15px;}
+  			.sidenav a {font-size: 18px;}
 
 		body.is-navPanel-visible #navPanel {
 			-moz-transform: translateX(0);
@@ -4686,3 +4725,52 @@ input, select, textarea {
 		}
 
 	}
+	.sidenav {
+		height: 100%; /* 100% Full-height */
+		width: 0; /* 0 width - change this with JavaScript */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Stay on top */
+		top: 0; /* Stay at the top */
+		left: 0;
+		background-color: #111; /* Black*/
+		overflow-x: hidden; /* Disable horizontal scroll */
+		padding-top: 60px; /* Place content 60px from the top */
+		transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	  }
+	  
+	  /* The navigation menu links */
+	  .sidenav a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+	  }
+	  
+	  /* When you mouse over the navigation links, change their color */
+	  .sidenav a:hover {
+		color: #f1f1f1;
+	  }
+	  
+	  /* Position and style the close button (top right corner) */
+	  .sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	  }
+	  /* The sidenav */
+.sidenav {
+	height: 100%;
+	width: 200px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 20px;
+  }
+	  

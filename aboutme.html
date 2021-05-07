@@ -20,9 +20,9 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html" lang="en">Home</a></li><li class="active"><a href="index.html"lang="fr">Accueil</a></li>
+							<li><a href="index.html" lang="en">Home</a></li><li><a href="index.html"lang="fr">Accueil</a></li>
 							<li><a href="projects.html" lang="en">My projects</a></li><li><a href="projects.html" lang="fr">Mes projets</a></li>
-							<li><a href="aboutme.html" lang="en">About me</a></li><li><a href="aboutme.html" lang="fr">À propos de moi</a></li>
+							<li class="active"><a href="aboutme.html" lang="en">About me</a></li><li class="active"><a href="aboutme.html" lang="fr">À propos de moi</a></li>
 						</ul>
 						<form>
 							<select id="lang-switch">
@@ -79,18 +79,20 @@
 									   </p>
 									</p>
 								</article>
-								<p lang="en">You can have a look on my CV in english <a href="pdf/EnglishCV.pdf" target="_blank"><strong>HERE</strong></a><p lang="fr">Vous pouvez accéder à mon CV en Français <a href="pdf/DEV WEB ALTERNANCE.pdf" target="_blank"><strong>ICI</strong></a></p>
+								<p lang="en">You can have a look on my CV in english <a href="pdf/EnglishCV.pdf" target="_blank"><strong>HERE</strong></a><p lang="fr">Vous pouvez accéder à mon CV en Français <a href="pdf/CV Osama TARUF.pdf" target="_blank"><strong>ICI</strong></a></p>
 							</section>
 
 						<!-- Footer -->
 							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="aboutme.html" class="page active">1</a>
-									<a href="experiences.html" class="page">2</a>
-									<a href="formations.html" class="page">3</a>
-									<a href="technologies.html" class="page">4</a>
-								</div>
+								<div id="mySidenav" class="sidenav">
+									<a href="aboutme.html" lang="fr" class="active">À propos de moi</a><a href="aboutme.html" lang="en" class="active">About me</a>
+									<a href="experiences.html"  lang="fr">Expériences</a><a href="experiences.html" lang="en">Experiences</a>
+									<a href="formations.html"  lang="fr">Formations</a> <a href="formations.html" lang="en">Training</a>
+									<a href="technologies.html"  lang="fr">Compétences</a><a href="technologies.html" lang="en">Skills</a>
+								  </div>
+								  
+								  <!-- Use any element to open the sidenav -->
+								  <span onclick="openNav()"></span>
 							</footer>
 
 					</div>
