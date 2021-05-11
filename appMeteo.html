@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Osama TARUF PORTFOLIO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+					<header id="header">
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html" lang="en">Home</a></li><li><a href="index.html"lang="fr">Accueil</a></li>
+							<li><a href="projects.html" lang="en">My projects</a></li><li><a href="projects.html" lang="fr">Mes projets</a></li>
+							<li><a href="aboutme.html" lang="en">About me</a></li><li><a href="aboutme.html" lang="fr">À propos de moi</a></li>
+						</ul>
+						<form>
+							<select id="lang-switch">
+								<option value="en">English</option>
+								<option value="fr" selected>Français</option>
+							</select>
+						</form>				
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/osama-taruf/" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedln</span></a></li>
+							<li><a href="https://github.com/kroomatik" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+                        
+							<article class="post featured">
+								<header class="major">
+									<h2>Application météo</h2>
+                                    <img alt="" src="\gif\gifmeteo.gif" />
+								</header>
+								<p><a href="https://github.com/kroomatik/AppMeteo.github.io" target="_blank" lang="en"><strong>Git link</strong></a></p>
+								<p><a href="https://github.com/kroomatik/AppMeteo.github.io" target="_blank" lang="fr"><strong>Lien git</strong></a></p>
+                                </article>
+                                <section class="posts">
+                                    <header>
+										<h2 lang="en">Goal</h2><h2 lang="fr">Objectifs</h2>
+                                        <p lang="en">The goal was to build an app which consist to get the current timezone weather </p>
+										<p lang="fr">Le but de ce projet est de faire une application qui affiche la météo en temps réel selon la localisation</p>
+
+									</header>
+                                    <article>
+                                        <header>
+                                            <h2 lang="en">Actions dones</h2><h2 lang="fr">Actions réalisées</h2>
+                                        <p lang="en"> I used JavaScript to make a script that display the current weather. 
+                                            I had to manage the data, then display the forecast. Then i used HTML5 and CSS to do the Front-End</p>
+											<p lang="fr"> J'ai utilisé JavaScript pour créer un script qui affiche la météo en temps direct. 
+                                                J'ai du gérer les données et afficher les prévisions. Ensuite j'ai utilisé HTML5 et CSS pour le design
+                                         </p>
+                                        </header>
+                            </section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<form method="post" action="https://formspree.io/f/mvodzppq">
+							<div class="fields">
+								<div class="field">
+									<label for="name" lang="en">Name</label><label for="name" lang="fr">Nom</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="3"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" lang="en" value="Send Message" /></li><li><input type="submit" lang="fr" value="Envoyer" /></li>
+							</ul>
+						</form>
+					</section>
+					<section class="split contact">
+						<section class="alt">
+							<h3 lang="en">Address : </h3><h3 lang="fr">Adresse :</h3>
+							<p> 122 rue de Paris - Montreuil, 93100</p>
+						</section>
+						<section>
+							<h3 lang="en"> Phone</h3><h3 lang="fr"> Téléphone</h3>
+							<p><a href="#">(+33) 06 23 34 67 70</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="#">taruf.osama@outlook.fr</a></p>
+						</section>
+						<section>
+							<h3 lang="en">Social</h3><h3 lang="fr">Réseaux sociaux</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/osama-taruf/" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedln</span></a></li>
+							<li><a href="https://github.com/kroomatik" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+					<li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				$('[lang]').hide(); // hide all lang attributes on start.
+				$('[lang="fr"]').show(); // show just Korean text (you can change it)
+				$('#lang-switch').change(function () { // put onchange event when user select option from select
+					var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
+					switch (lang) {
+						case 'en':
+							$('[lang]').hide();
+							$('[lang="en"]').show();
+						break;
+						case 'fr':
+							$('[lang]').hide();
+							$('[lang="fr"]').show();
+						break;
+						default:
+							$('[lang]').hide();
+							$('[lang="fr"]').show();
+						}
+				});
+				</script>
+
+	</body>
+</html>
